@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog</title>
+    <script src="https://kit.fontawesome.com/2bb90c57b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/NewBlog.css">
+</head>
+<body>
+    <header>
+        <div id="header" class="container-1280">
+            <a href="/" id="writer">Writer</a>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="ListArticles.html">My articles</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="/" class="border" id="logout">Logout</a></li>
+                    </ul>
+                </nav>
+                <img src="img/PhotoDeProfil.png" alt="Photo de profil de l'utilisateur">
+            </div>
+            <i class="fa-solid fa-bars" id="burgermenu"></i>
+        </div>
+    </header>
+    <main>
+        <section class="container-512">
+            <h1>New Blog</h1>
+            <form action="#">
+                <div id="fd1">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" placeholder="Title">
+                    <label for="write">Write your post</label>
+                    <textarea name="write" id="write" placeholder="Start writing here"></textarea>
+                </div>
+                <h2>Add a category</h2>
+                <div id="fd2">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="technology" id="technology">
+                        <span class="checkmark">Technology</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="science" id="science">
+                        <span class="checkmark">Science</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="business" id="business">
+                        <span class="checkmark">Business</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="art" id="art">
+                        <span class="checkmark">Art</span>
+                    </label>
+                </div>
+                <div id="fd3">
+                    <div class="file-input-wrapper">
+                        <button class="file-input-button">Upload Image</button>
+                        <input type="file" name="file">
+                    </div>
+                    <input type="submit" value="Publish">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>© 2024 Writer</p>
+    </footer>    
+</body>
+</html>

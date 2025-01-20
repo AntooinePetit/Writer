@@ -1,0 +1,286 @@
+/* Import des fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* Uniformisation */
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --news:"Newsreader", serif;
+    /* Colors */
+    --white-color:#FFFFFF;
+    --green-btn:#1AE570;
+    --green-text:#4F966E;
+    --black-text:#0D1C12;
+    --grey:#E5E8EB;
+    --background-grey:#E8F2ED;
+    --grey-text:#696969;
+    --table-border:#D1E8D9;
+    --red-delete:#964F4F;
+}
+
+h1{
+    font-family: var(--news);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--black-text);
+    padding-bottom: 30px;
+}
+
+img{
+    width: 100%;
+}
+
+.container-1280{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.container-960{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+i{
+    color: var(--green-text);
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Header */
+
+#burgermenu{
+    display: none;
+}
+
+header{
+    border-bottom: 1px solid var(--grey);
+}
+
+#header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 25px 10px;
+}
+
+#menu{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 30px;
+}
+
+#writer{
+    font-family: var(--news);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--black-text);
+}
+
+header img{
+    max-width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+header ul{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav li{
+    text-decoration: none;
+    list-style: none;
+}
+
+header nav a{
+    font-family: var(--news);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black-text);
+}
+
+#logout{
+    font-weight: 700;
+}
+
+/* Main */
+
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#classement{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button{
+    background-color: var(--background-grey);
+    padding: 6px 16px;
+    border: 1px solid var(--background-grey);
+    border-radius: 16px;
+}
+
+.button label{
+    font-family: var(--news);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black-text);
+}
+
+.button i{
+    color: var(--black-text);
+    font-size: 16px;
+}
+
+form{
+    margin: 25px auto;
+}
+
+form div{
+    background-color: var(--background-grey);
+    border: 1px solid var(--background-grey);
+    border-radius: 24px;
+    padding: 10px 16px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="search"]{
+    font-family: var(--news);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-text);
+    background-color: var(--background-grey);
+    border: none;
+    width: 100%;
+}
+
+input[type="search"]::placeholder{
+    font-family: var(--news);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--green-text);
+}
+
+/* Tableau */
+
+table{
+    border: 1px solid var(--table-border);
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+}
+
+thead th{
+    font-family: var(--news);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black-text);
+    height: 45px;
+}
+
+th, td {
+    border-top: 1px solid var(--table-border);
+    text-align: left;
+    padding: 8px;
+}
+
+.t-table{
+    font-family: var(--black-text);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.t-date{
+    font-family: var(--news);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--green-text);
+}
+
+.t-view a,
+.t-edit a{
+    font-family: var(--news);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green-text);
+}
+
+.t-delete button{
+    font-family: var(--news);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--red-delete);
+    background-color: var(--white-color);
+    border: none;
+}
+
+tbody th{
+    height: 80px;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer p{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* Responsive mobile */
+
+@media screen and (max-width:767px) {
+    #menu{
+        display: none;
+    }
+    #burgermenu{
+        display: block;
+    }
+    #classement{
+        display: grid;
+    }
+    th, td{
+        padding: 8px 5px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .t-table{
+        font-size: 9px;
+    }
+    .t-date, .t-view a, .t-edit a, .t-delete button{
+        font-size: 10px;
+    }
+}
