@@ -166,7 +166,7 @@ i{
 
 #head-article{
     height: 465px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/RiseOfTheMetaverse.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/RiseOfTheMetaverse.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
